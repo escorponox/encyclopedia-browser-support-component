@@ -85,8 +85,7 @@ body {
 }
 
 .cs__main--examples h2 {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-weight: 500;
   font-size: 32px;
   letter-spacing: 1px;
@@ -118,7 +117,7 @@ body {
 }
 
 .cs__main--examples .example__container:nth-of-type(1) {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* CODE BOX STYLE */
@@ -191,7 +190,7 @@ body {
 }
 
 .cs__main .toggleBox:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .cs__aside {
@@ -334,8 +333,7 @@ body {
 }
 
 .cs__aside--other .native ul,.cs__aside--other .non-native ul {
-  margin: 0;
-  margin-top: 2px;
+  margin: 2px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -434,6 +432,5 @@ body {
 }
 
 .cs__footnote .related ol,.cs__footnote .references ol {
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
