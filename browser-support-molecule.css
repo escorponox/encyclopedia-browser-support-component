@@ -85,8 +85,7 @@ body {
 }
 
 .cs__main--examples h2 {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-weight: 500;
   font-size: 32px;
   letter-spacing: 1px;
@@ -118,15 +117,66 @@ body {
 }
 
 .cs__main--examples .example__container:nth-of-type(1) {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* CODE BOX STYLE */
 
-.codebox {
+.cb {
   width: 100%;
-  min-height: 300px;
+}
+
+.cb__buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cb__buttons__button {
   border: 1px solid #3CDAF2;
+  border-radius: 4px;
+  color: #3CDAF2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 6px;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  width: 150px;
+}
+
+.cb__buttons__button--active {
+  background-color: #3CDAF2;
+  color: #F4F9FC;
+}
+
+.cb__buttons__button--active::after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #3CDAF2;
+  content: '';
+  height: 0;
+  left: 65px;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+
+.cb__code__container {
+  background-color: #F4F9FC;
+  border: 2px solid #3CDAF2;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.cb__code__container__pre {
+  margin: 0;
+}
+
+.cb__code__container__code {
+  font: 300 20px "Roboto", sans-serif;
+  white-space: pre-wrap;
 }
 
 /* END OF CODE BOX STYLE */
@@ -146,7 +196,7 @@ body {
 }
 
 .cs__main .toggleBox:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .cs__aside {
@@ -289,8 +339,7 @@ body {
 }
 
 .cs__aside--other .native ul,.cs__aside--other .non-native ul {
-  margin: 0;
-  margin-top: 2px;
+  margin: 2px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -389,6 +438,5 @@ body {
 }
 
 .cs__footnote .related ol,.cs__footnote .references ol {
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
