@@ -171,6 +171,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   padding: 30px;
+  white-space: pre;
 }
 
 /* END OF CODE BOX STYLE */
