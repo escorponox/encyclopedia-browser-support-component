@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,100italic,300italic,400italic,500italic,700,700italic,900,900italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
 
 /* Base Styles */
 
@@ -183,19 +184,61 @@ body {
 
 /* TOGGLE BOX STYLE */
 
-.toggleBox {
+.tb {
   width: 100%;
   min-height: 300px;
-  border: 1px solid #FF76B5;
+
 }
+
+.tb--open {
+
+}
+
+.tb__header {
+  background-color: #FF76B5;
+  border-radius: 4px;
+  color: #FFF7FC;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  padding: 15px 33px;
+}
+
+.tb__header__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.tb .tb__header__arrow--up {
+  display: none;
+}
+
+.tb .tb__header__arrow--down {
+  display: inline-block;
+}
+
+.tb--open .tb__header__arrow--up {
+  display: inline-block;
+}
+.tb--open .tb__header__arrow--down {
+  display: none;
+}
+
+.tb__content {
+
+}
+
 
 /* END OF TOGGLE BOX STYLE */
 
-.cs__main .toggleBox {
+.cs__main .tb {
   margin-bottom: 45px;
 }
 
-.cs__main .toggleBox:last-child {
+.cs__main .tb:last-child {
   margin-bottom: 0;
 }
 
