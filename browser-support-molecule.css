@@ -237,6 +237,7 @@ body {
 }
 
 .q__container .ball,.a__container .ball {
+  font-size: 15px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -357,8 +358,30 @@ body {
   margin-top: 20px;
 }
 
+.cs__footnote .related li {
+  color: #333333;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.cs__footnote .related li a {
+  color: #333333;
+  text-decoration: none;
+}
+
 .cs__footnote .references {
   margin-top: 40px;
+}
+
+.cs__footnote .references li {
+  color: #333333;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.cs__footnote .references li a {
+  text-decoration: none;
+  color: #45C2D5;
 }
 
 .cs__footnote .related h3,.cs__footnote .references h3 {
@@ -371,15 +394,4 @@ body {
 .cs__footnote .related ol,.cs__footnote .references ol {
   margin: 0;
   margin-top: 10px;
-}
-
-.cs__footnote .related li,.cs__footnote .references li {
-  color: #333333;
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.cs__footnote .related li a,.cs__footnote .references li a {
-  text-decoration: none;
-  color: #45C2D5;
 }
