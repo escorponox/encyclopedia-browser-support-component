@@ -19,7 +19,6 @@ body {
 
 .container {
   max-width: 1280px;
-  height: 100vh;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,7 +29,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 50px;
-  height: 100%;
 }
 
 @media only screen and (min-width: 769px) {
@@ -99,7 +97,7 @@ body {
 }
 
 .cs__main--examples .example__container .title {
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: #333333;
   font-weight: 700;
   font-size: 22px;
@@ -128,7 +126,7 @@ body {
 .codebox {
   width: 100%;
   min-height: 300px;
-  border: 1.5px solid #3CDAF2;
+  border: 1px solid #3CDAF2;
 }
 
 /* END OF CODE BOX STYLE */
@@ -138,7 +136,7 @@ body {
 .toggleBox {
   width: 100%;
   min-height: 300px;
-  border: 1.5px solid #FF76B5;
+  border: 1px solid #FF76B5;
 }
 
 /* END OF TOGGLE BOX STYLE */
@@ -287,7 +285,6 @@ body {
 .cs__aside--other .native .title,.cs__aside--other .non-native .title {
   color: #8F868B;
   font-weight: 600;
-  letter-spacing: 0.2px;
   font-size: 18px;
 }
 
@@ -312,7 +309,7 @@ body {
 }
 
 .libraries .library:first-of-type {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .cs__bs {
