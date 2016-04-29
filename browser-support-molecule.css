@@ -123,10 +123,50 @@ body {
 
 /* CODE BOX STYLE */
 
-.codebox {
+.cb {
   width: 100%;
   min-height: 300px;
   border: 1px solid #3CDAF2;
+}
+
+.cb__buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cb__buttons__button {
+  border: 1px solid #3CDAF2;
+  border-radius: 4px;
+  color: #3CDAF2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 6px;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  width: 150px;
+}
+
+.cb__buttons__button--active {
+  background-color: #3CDAF2;
+  color: #F4F9FC;
+}
+
+.cb__buttons__button--active::after {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #3CDAF2;
+  content: '';
+  height: 0;
+  left: 42%;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+
+.cb__code {
+
 }
 
 /* END OF CODE BOX STYLE */
