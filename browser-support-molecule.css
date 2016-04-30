@@ -192,6 +192,11 @@ body {
 }
 
 .tb__header {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background-color: #FF76B5;
     border-radius: 4px;
     color: #FFF7FC;
@@ -202,6 +207,11 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.tb--open .tb__header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .tb__header__title {
@@ -234,7 +244,6 @@ body {
     display: none;
     padding: 30px 20px;
     position: relative;
-    top: -4px;
 }
 
 @media only screen and (min-width: 769px) {
