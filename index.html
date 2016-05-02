@@ -256,15 +256,15 @@ console.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6</code></pre>
                             <div class="bs__container">
                                 <div class="bs__label">
                                     <div class="status">
-                                        <div class="status--color not--supported"></div>
+                                        <div class="status--color not-supported"></div>
                                         <div class="status--name">Not Supported</div>
                                     </div>
                                     <div class="status">
-                                        <div class="status--color partial--supported"></div>
+                                        <div class="status--color partial-supported"></div>
                                         <div class="status--name">Support with Shim/Polyfill/etc.</div>
                                     </div>
                                     <div class="status">
-                                        <div class="status--color fully--supported"></div>
+                                        <div class="status--color fully-supported"></div>
                                         <div class="status--name">Full Support</div>
                                     </div>
                                 </div>
@@ -274,26 +274,103 @@ console.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6</code></pre>
                                             <img src="assets/icons/ie.svg" alt="">Internet Explorer
                                         </div>
                                         <div class="browser--version">
-                                            <div class="version not--supported">
-                                                <input id="ie7" type="radio" name="ie" checked>
+                                            <div class="version not-supported">
+                                                <input id="ie7" type="radio" name="ie" value="ie7" checked>
                                                 <label for="ie7">7</label>
                                             </div>
-                                            <div class="version partial--supported">
-                                                <input id="ie8" type="radio" name="ie">
+                                            <div class="version partial-supported version--selected">
+                                                <input id="ie8" type="radio" name="ie" value="ie8">
                                                 <label for="ie8">8</label>
                                             </div>
-                                            <div class="version fully--supported">
-                                                <input id="ie9" type="radio" name="ie">
+                                            <div class="version fully-supported">
+                                                <input id="ie9" type="radio" name="ie" value="ie9">
                                                 <label for="ie9">9</label>
                                             </div>
-                                            <div class="version fully--supported">
-                                                <input id="ie10" type="radio" name="ie">
+                                            <div class="version fully-supported">
+                                                <input id="ie10" type="radio" name="ie" value="ie10">
                                                 <label for="ie10">10</label>
                                             </div>
-                                            <div class="version fully--supported">
-                                                <input id="ie11" type="radio" name="ie">
+                                            <div class="version fully-supported">
+                                                <input id="ie11" type="radio" name="ie" value="ie11">
                                                 <label for="ie11">11</label>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-container info-container--show">
+                                        <div id="ie7-info" class="version-info not-supported">
+                                            <div class="version-info__use">
+
+                                            </div>
+                                            <div class="version-info__support">
+
+                                            </div>
+                                            <div class="version-info__close">&#x00D7;</div>
+                                        </div>
+                                        <div id="ie8-info" class="version-info partial-supported version-info--selected">
+                                            <div class="version-info__section version-info__use">
+                                                <div class="title">Users Using It</div>
+                                                <div class="usage-list">
+                                                    <div class="usage-list__item">
+                                                        <div class="usage-list__item__label">United States:</div>
+                                                        <div class="usage-list__item__data">4%</div>
+                                                    </div>
+                                                    <div class="usage-list__item">
+                                                        <div class="usage-list__item__label">Worldwide:</div>
+                                                        <div class="usage-list__item__data">2%</div>
+                                                    </div>
+                                                </div>
+                                                <div class="note">Updated: January 12, 2016</div>
+                                            </div>
+                                            <div class="version-info__section version-info__support">
+                                                <div class="title">How to Add Support?</div>
+                                                <div class="numbered-list">
+                                                    <div class="numbered-list__item">
+                                                        HTML%Boilerplate: Add Support for.sort() support for IE8
+                                                    </div>
+                                                    <div class="numbered-list__item">
+                                                        HTML%Boilerplate: Add Support for .sort() support for IE8
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="version-info__section version-info__support">
+                                                <div class="title">Should You Support this Version</div>
+                                                <div class="numbered-list">
+                                                    <div class="numbered-list__item">
+                                                        Info or Link Here
+                                                    </div>
+                                                    <div class="numbered-list__item">
+                                                        Info or Link Here
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="version-info__close">&#x00D7;</div>
+                                        </div>
+                                        <div id="ie9-info" class="version-info fully-supported">
+                                            <div class="version-info__use">
+
+                                            </div>
+                                            <div class="version-info__support">
+
+                                            </div>
+                                            <div class="version-info__close">&#x00D7;</div>
+                                        </div>
+                                        <div id="ie10-info" class="version-info fully-supported">
+                                            <div class="version-info__use">
+
+                                            </div>
+                                            <div class="version-info__support">
+
+                                            </div>
+                                            <div class="version-info__close">&#x00D7;</div>
+                                        </div>
+                                        <div id="ie11-info" class="version-info fully-supported">
+                                            <div class="version-info__use">
+
+                                            </div>
+                                            <div class="version-info__support">
+
+                                            </div>
+                                            <div class="version-info__close">&#x00D7;</div>
                                         </div>
                                     </div>
                                 </div>
