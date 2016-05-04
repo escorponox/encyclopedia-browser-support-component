@@ -672,7 +672,12 @@ body {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    overflow: scroll;
+}
+
+@media only screen and (max-width: 400px) {
+    .version-info {
+        overflow: scroll;
+    }
 }
 
 .version-info--selected {
@@ -699,14 +704,14 @@ body {
 }
 
 .version-info__separator {
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 20px 25px 45px 25px;
     width: 1px;
 }
 
 @media only screen and (max-width: 850px) {
     .version-info__separator {
-        background-color: rgba(255,255,255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         height: 1px;
         margin-bottom: 25px;
         width: 100%;
@@ -819,7 +824,6 @@ body {
         right: 12px;
     }
 }
-
 
 .cs__footnote {
     padding-top: 25px;
