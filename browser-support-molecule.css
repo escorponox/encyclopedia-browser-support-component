@@ -523,9 +523,15 @@ body {
 .bs__browser {
     border: 1px solid #FCC5DC;
     border-radius: 2px;
-    padding: 15px 30px;
+    padding: 15px;
     background-color: #FFFFFF;
     margin-top: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+    .bs__browser {
+        padding: 15px 35px;
+    }
 }
 
 .bs__browser .ie {
@@ -666,6 +672,7 @@ body {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    overflow: scroll;
 }
 
 .version-info--selected {
@@ -692,14 +699,14 @@ body {
 }
 
 .version-info__separator {
-    background-color: #FFFFFF;
+    background-color: rgba(255,255,255, 0.5);
     margin: 20px 25px 45px 25px;
     width: 1px;
 }
 
 @media only screen and (max-width: 850px) {
     .version-info__separator {
-        background-color: #FFFFFF;
+        background-color: rgba(255,255,255, 0.5);
         height: 1px;
         margin-bottom: 25px;
         width: 100%;
@@ -727,7 +734,7 @@ body {
     flex-direction: column;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
-    flex: 1 0 20%;
+    /*flex: 1 0 20%;*/
     -webkit-align-items: flex-start;
     align-items: flex-start;
 }
@@ -769,7 +776,7 @@ body {
 }
 
 .version-info__support {
-    flex: 1 0 20%;
+    /*flex: 1 0 20%;*/
 }
 
 .numbered-list {
