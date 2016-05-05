@@ -32,7 +32,7 @@ The required `src` attribute is used to specify the URL of the desired image. It
 
 **alt**
 
-![demo](media/alt.png)
+![demo](images/alt.png)
 
 `alt` stands for alternate text. This attribute is used to specify an alternative text describing the image. This text will then be displayed if the image URL is wrong, or when the image fails to load as shown above.
 
