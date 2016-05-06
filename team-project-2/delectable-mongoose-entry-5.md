@@ -19,7 +19,8 @@ When a string calls the method `.toLowerCase()`, it converts the character withi
 ## Syntax
 
 ```js
-str.toLowerCase()
+strVariable.toLowerCase()
+'String Literal'.toLowerCase() 
 ```
 
 ## Usage
