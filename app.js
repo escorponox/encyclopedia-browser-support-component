@@ -1,14 +1,27 @@
-$(document).ready(function() {
-    $('.tb--open').find('.tb__content').css({ display: 'block'});
-    $('.tb__header').on('click', function() {
-        var content = $(this).next();
-        var container = $(this).parent();
-        if (container.hasClass('tb--open')) {
-            container.removeClass('tb--open');
-            content.velocity("slideUp", { duration: 400 });
-        } else if (!container.hasClass('tb--open')) {
-            container.addClass('tb--open');
-            content.velocity("slideDown", { duration: 400 });
+document.addEventListener('DOMContentLoaded', function cb() {
+    [].forEach.call(document.querySelectorAll('.tb--open'), function (el) {
+        el.querySelector('.tb__content').style.display = 'block';
+    });
+
+    [].forEach.call(document.querySelectorAll('.tb__header'), function (el) {
+        el.addEventListener('click', function (e) {
+            var content = el.nextElementSibling;
+            var container = el.parentNode;
+            animate(content, container);
+        }, false);
+    });
+
+    function animate(content, container) {
+        if (container.classList.contains('tb--open')) {
+            container.classList.remove('tb--open');
+            Velocity(content, "slideUp", {
+                duration: 400,
+            });
+        } else {
+            container.classList.add('tb--open');
+            Velocity(content, "slideDown", {
+                duration: 400,
+            });
         }
-    })
-})
+    }
+});
