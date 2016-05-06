@@ -22,9 +22,9 @@ When a string calls the method `.charCodeAt()`, it returns a numeric value, whic
 str.charCodeAt(index)
 ```
 
-###Parameters
+### Parameters
 
-####index
+#### index
 Number representing the position in the string of the character of which the code should be returned.
 
 The number corresponding to the first character in the string is 0, 1 to the second, and so on.
@@ -57,13 +57,13 @@ var str = 'hello world!'
 str.charCodeAt(str.length - 1) // 68
 ```
 
-##Special Notes
+## Special Notes
 `.charCodeAt()` can return the first code unit of a surrogate pair if the code point corresponds to a supplementary plane. For more information about Unicode visit [Unicode Wikipedia Article](https://en.wikipedia.org/wiki/Unicode).
 
-##Browser Support
+## Browser Support
 
-- Chrome: yes
-- Firefox: yes
-- Internet Explorer: yes
-- Opera: yes
-- Safari: yes
+- Chrome: Yes
+- Firefox: Yes
+- Internet Explorer: Yes
+- Opera: Yes
+- Safari: Yes
