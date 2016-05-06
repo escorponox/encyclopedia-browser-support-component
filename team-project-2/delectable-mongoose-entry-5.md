@@ -12,6 +12,16 @@ The string prototype object comes with many native methods that are useful for s
 
 Most native methods have name that are rather verbose, for example the native method `String.prototype.toLowerCase()`. By just looking at the name of the method `.toLowerCase()`, we can know it's purpose - i.e. it converts the character within a string to lower case.
 
+## Description
+
+When a string calls the method `.toLowerCase()`, it converts the character within a string to lower case.
+
+## Syntax
+
+```js
+str.toLowerCase()
+```
+
 ## Usage
 
 Usage is simple, all you have to do is call the `.toLowerCase()` method on a string, and the Javascript engine is smart enough to do heavy lifting.
@@ -52,4 +62,12 @@ So you might be wondering, since String literals are primitive type, how and why
 
 Well it works because the Javascript engine **automatically converts** string primitives to String objects so that you can use all the string methods on the `String.prototype` object on primitive strings.
 
- How awesome is that?
+How awesome is that?
+
+## Browser Support
+
+- Chrome: Yes
+- Firefox: Yes
+- Internet Explorer: Yes
+- Opera: Yes
+- Safari: Yes
