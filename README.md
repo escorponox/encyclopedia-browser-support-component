@@ -29,7 +29,7 @@ Members:
 
 ## Workflow
 
-The workflow is based on [Pull Request](https://github.com/cusxio/encyclopedia-browser-support-component/pulls), which also serves as a work log so that everything is traceable.
+The workflow is based on [Pull Request](https://github.com/cusxio/encyclopedia-browser-support-component/pulls?q=is%3Apr+is%3Aclosed), which also serves as a work log so that everything is traceable.
 
 
 ## Team Project 2
