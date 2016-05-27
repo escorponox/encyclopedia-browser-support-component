@@ -267,22 +267,20 @@ body {
 }
 
 .cs__aside {
-    background-color: #fff7fc;
-    border-top: 1px solid #fcc5dc;
+    /*background-color: #f3f3fA;*/
     -webkit-flex: 1 0 100%;
     -ms-flex: 1 0 100%;
     flex: 1 0 100%;
     -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
-    padding: 30px;
+    padding: 10px;
     margin: 0 -20px
 }
 
 @media only screen and (min-width:769px) {
     .cs__aside {
-        padding: 22px;
-        border-left: 1px solid #fcc5dc;
+        padding: 0;
         border-top: none;
         margin: 0;
         -webkit-order: 2;
@@ -294,36 +292,51 @@ body {
     }
 }
 
-.cs__aside hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #fcc5dc
+.cs__aside--qa {
+    padding: 30px 22px 26px;
+    background-color: #f3f3fA;;
+    margin-bottom: 35px
 }
 
-.cs__aside--qa {
-    color: #e784b1
+.cs__aside--other {
+    padding: 35px 22px 45px;
+    background-color: #f3f3fA;
+    margin-bottom: 35px
 }
 
 .cs__aside--qa .title {
-    font-weight: 300;
-    font-size: 24px
+    color: #F665AD;
+    font-weight: 500;
+    font-size: 18px
 }
 
 .cs__aside--qa .logo {
-    margin-top: 4px;
-    font-weight: 500;
-    font-size: 20px
+    color: #929292;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px
 }
 
 .cs__aside--qa .related {
-    margin-top: 35px
+    margin-top: 35px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #797CF3;
+}
+
+.cs__aside--qa .related .fa-angle-right {
+    font-size: 22px;
+    color: #797CF3
 }
 
 .cs__aside--qa .related a {
     font-size: 15px;
     font-weight: 500;
-    color: #8f868b;
-    text-decoration: none
+    color: #797CF3;
+    padding-left: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .qna {
@@ -335,7 +348,7 @@ body {
     line-height: 16px;
     font-weight: 400;
     font-size: 16px;
-    color: #8f868b
+    color: #7A6D73;
 }
 
 .qna .answer, .qna .question {
@@ -353,6 +366,7 @@ body {
 
 .a__container .ball, .q__container .ball {
     font-size: 15px;
+    font-weight: 700;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -370,39 +384,45 @@ body {
 }
 
 .q__container .ball {
-    background-color: #fbc1dd
+    background-color: #A9BAC5
 }
 
 .a__container {
-    margin-top: 8px
+    margin-top: 8px;
+    align-items: center
 }
 
-.a__container .ball {
-    background-color: #e2c9d6
+.qna.no .a__container .ball {
+    background-color: #FEA7A7
 }
 
-.answer.no {
-    color: #ddc8d2
+.qna.yes .a__container .ball {
+    background-color: #98D59A
 }
 
-.answer.yes {
-    color: #63e062
+.qna.no .answer {
+    color: #FD595B
+}
+
+.qna.yes .answer {
+    color: #16B108
 }
 
 .cs__aside--other .title {
-    color: #e784b1;
-    font-weight: 300;
-    font-size: 24px
+    color: #F665AD;
+    font-weight: 500;
+    font-size: 18px
 }
 
 .cs__aside--other .native, .cs__aside--other .non-native {
-    margin-top: 15px
+    margin-top: 30px
 }
 
 .cs__aside--other .native .title, .cs__aside--other .non-native .title {
-    color: #8f868b;
+    color: #8D8488;
     font-weight: 600;
-    font-size: 18px
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .cs__aside--other .native ul, .cs__aside--other .non-native ul {
@@ -412,12 +432,13 @@ body {
 }
 
 .cs__aside--other .native ul li, .cs__aside--other .non-native ul li {
-    color: #8f868b;
-    font-weight: 300
+    color: #8D8488;
+    font-weight: 400
 }
 
 .cs__aside--other .library .title {
-    font-size: 16px
+    font-size: 16px;
+    text-transform: none;
 }
 
 .libraries .library {
