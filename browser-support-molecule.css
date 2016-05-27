@@ -2,7 +2,10 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
 * {
     box-sizing: border-box;
-    font-family: Roboto, sans-serif
+    font-family: Roboto, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1290px;
     margin: 0 auto;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -32,7 +35,7 @@ body {
     .container {
         padding-left: 60px;
         padding-right: 60px;
-        padding-top: 50px
+        padding-top: 90px
     }
 }
 
@@ -71,8 +74,14 @@ body {
 }
 
 .cs__main--method .method h1 {
+    color: #ac69ea;
     font-weight: 300;
-    font-size: 54px
+    font-size: 72px
+}
+
+.cs__main--method .method h1 span {
+    color: #898989;
+    letter-spacing: 20px
 }
 
 .cs__main--method .desc {
