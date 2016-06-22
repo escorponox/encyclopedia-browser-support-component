@@ -1,6 +1,6 @@
 var data = {
     title: 'Browser Support Molecule',
-    name: '.sort <span>()</span>',
+    name: '.sort',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusamus eius magni ullam vitae tempora consequuntur corporis.',
     examples: {
         title: 'Examples',
@@ -12,12 +12,12 @@ var data = {
                     activeTab: 1,
                     tabs: [
                         {
-                            buttonTitle: 'JavaScript',
-                            code: 'var myArray = [6, 5, 4, 3, 1, 2];\nmyArray.sort();\nconsole.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6'
+                            buttonTitle: 'JAVASCRIPT',
+                            code: '<span class="line-number">1</span><span class="hl keyword">var</span> <span class="hl var-declare">myArray</span> = [<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]; \n<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>(); \n<span class="line-number">3</span><span class="hl var-usage">console</span>.<span class="hl function-call">log</span>(<span class="hl var-usage">myArray</span>); <span class="hl comment">// => 1, 2, 3, 4, 5, 6</span>'
                         },
                         {
-                            buttonTitle: 'Result',
-                            code: '[ 1, 2, 3, 4, 5, 6 ]'
+                            buttonTitle: 'RESULT',
+                            code: '[<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]'
                         }
                     ]
                 },
@@ -30,12 +30,12 @@ var data = {
                     activeTab: 2,
                     tabs: [
                         {
-                            buttonTitle: 'JavaScript',
-                            code: 'var myArray = [6, 5, 4, 3, 1, 2];\nmyArray.sort();\nconsole.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6'
+                            buttonTitle: 'JAVASCRIPT',
+                            code: '<span class="line-number">1</span><span class="hl keyword">var</span> <span class="hl var-declare">myArray</span> = [<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]; \n<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>(); \n<span class="line-number">3</span><span class="hl var-usage">console</span>.<span class="hl function-call">log</span>(<span class="hl var-usage">myArray</span>); <span class="hl comment">// => 1, 2, 3, 4, 5, 6</span>'
                         },
                         {
-                            buttonTitle: 'Result',
-                            code: '[ 1, 2, 3, 4, 5, 6 ]'
+                            buttonTitle: 'RESULT',
+                            code: '[<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]'
                         }
                     ]
                 },
@@ -61,12 +61,12 @@ var data = {
                     activeTab: 1,
                     tabs: [
                         {
-                            buttonTitle: 'JavaScript',
-                            code: 'var myArray = [6, 5, 4, 3, 1, 2];\nmyArray.sort();\nconsole.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6'
+                            buttonTitle: 'JAVASCRIPT',
+                            code: '<span class="line-number">1</span><span class="hl keyword">var</span> <span class="hl var-declare">myArray</span> = [<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]; \n<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>(); \n<span class="line-number">3</span><span class="hl var-usage">console</span>.<span class="hl function-call">log</span>(<span class="hl var-usage">myArray</span>); <span class="hl comment">// => 1, 2, 3, 4, 5, 6</span>'
                         },
                         {
-                            buttonTitle: 'Result',
-                            code: '[ 1, 2, 3, 4, 5, 6 ]'
+                            buttonTitle: 'RESULT',
+                            code: '[<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]'
                         }
                     ]
                 },
@@ -79,12 +79,12 @@ var data = {
                     activeTab: 1,
                     tabs: [
                         {
-                            buttonTitle: 'JavaScript',
-                            code: 'var myArray = [6, 5, 4, 3, 1, 2];\nmyArray.sort();\nconsole.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6'
+                            buttonTitle: 'JAVASCRIPT',
+                            code: '<span class="line-number">1</span><span class="hl keyword">var</span> <span class="hl var-declare">myArray</span> = [<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]; \n<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>(); \n<span class="line-number">3</span><span class="hl var-usage">console</span>.<span class="hl function-call">log</span>(<span class="hl var-usage">myArray</span>); <span class="hl comment">// => 1, 2, 3, 4, 5, 6</span>'
                         },
                         {
-                            buttonTitle: 'Result',
-                            code: '[ 1, 2, 3, 4, 5, 6 ]'
+                            buttonTitle: 'RESULT',
+                            code: '[<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]'
                         }
                     ]
                 },
@@ -97,12 +97,12 @@ var data = {
                     activeTab: 1,
                     tabs: [
                         {
-                            buttonTitle: 'JavaScript',
-                            code: 'var myArray = [6, 5, 4, 3, 1, 2];\nmyArray.sort();\nconsole.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6'
+                            buttonTitle: 'JAVASCRIPT',
+                            code: '<span class="line-number">1</span><span class="hl keyword">var</span> <span class="hl var-declare">myArray</span> = [<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]; \n<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>(); \n<span class="line-number">3</span><span class="hl var-usage">console</span>.<span class="hl function-call">log</span>(<span class="hl var-usage">myArray</span>); <span class="hl comment">// => 1, 2, 3, 4, 5, 6</span>'
                         },
                         {
-                            buttonTitle: 'Result',
-                            code: '[ 1, 2, 3, 4, 5, 6 ]'
+                            buttonTitle: 'RESULT',
+                            code: '[<span class="hl const-number">6</span>, <span class="hl const-number">5</span>, <span class="hl const-number">4</span>, <span class="hl const-number">3</span>, <span class="hl const-number">1</span>, <span class="hl const-number">2</span>]'
                         }
                     ]
                 },
@@ -364,19 +364,45 @@ var data = {
     relatedArticles: {
         title: 'Related Articles',
         articles: [
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio.',
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.',
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium !',
-            'orem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque.'
+            {
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio.',
+                link: 'https://google.com',
+            },
+            {
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio.',
+                link: 'https://google.com',
+            },
+            {
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium !',
+                link: 'https://google.com',
+            },
+            {
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque.',
+                link: 'https://google.com',
+            }
         ]
     },
     reference: {
         title: 'References',
         references: [
-            'Can I Use ? <a href="">http://caniuse.com</a>',
-            'Can I Use ? <a href="">http://caniuse.com</a>',
-            'Can I Use ? <a href="">http://caniuse.com</a>'
-
+            {
+                title: 'Can I Use ?',
+                link: 'http://caniuse.com',
+            },
+            {
+                title: 'Can I Use ?',
+                link: 'http://caniuse.com',
+            },
+            {
+                title: 'Can I Use ?',
+                link: 'http://caniuse.com',
+            }
         ]
     }
 };
+
+document.title = data.title;
+var htmlTemplate = document.getElementById('entry-template').innerHTML;
+var handlebarsTemplate = Handlebars.compile(htmlTemplate);
+var compiledHtml = handlebarsTemplate(data);
+document.getElementById('browser-support').innerHTML = compiledHtml;
