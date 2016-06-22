@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;img&gt;</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <span>The</span>
+            <code>&lt;img&gt;</code>
+            <span>Element</span>
+        </div>
+        <div class="markup__container">
+            <div class="title">HTML markup:</div>
+            <div class="markup">
+                <code>
+                    &lt;img src="<span class="green markup__src">http://dummyimage.com/200x200/000/fff</span>" alt="<span class="green markup__alt">Alternate Text</span>" width="<span class="green markup__width">200</span>" height="<span class="green markup__height">200</span>" /&gt;
+                </code>
+            </div>
+        </div>
+        <div class="output__container">
+            <div class="title">Output:</div>
+            <div class="output"></div>
+        </div>
+        <div class="controls__container">
+            <div class="title">Options:</div>
+            <div class="controls">
+                <div class="width">
+                    <label for="width">Width:</label>
+                    <input id="width" type="text">
+                </div>
+                <div class="height">
+                    <label for="height">Height: </label>
+                    <input id="height" type="text">
+                </div>
+                <div class="src">
+                    <label for="src">Source:</label>
+                    <input id="src" type="text">
+                </div>
+                <div class="alt">
+                    <label for="text">Alternate Text:</label>
+                    <input id="text" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
