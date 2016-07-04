@@ -3,493 +3,518 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Browser Support Molecule</title>
+    <title>data.title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="browser-support-molecule.css">
 </head>
 
 <body>
-    <div class="browser-support">
-        <div class="container">
-            <section class="cs">
-                <article class="cs__main">
-                    <div class="cs__main--method">
-                        <div class="method">
-                            <h1>.sort <span>()</span></h1>
-                        </div>
-                        <p class="desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusamus eius magni ullam vitae tempora consequuntur corporis.</p>
-                    </div>
-                    <hr />
-                    <div class="cs__main--examples">
-                        <h2>Examples</h2>
-                        <div class="example__container">
-                            <div class="title">First Example Title</div>
-                            <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            <div class="cb">
-                                <div class="cb__buttons">
-                                    <div class="cb__buttons__button cb__buttons__button--active">JAVASCRIPT</div>
-                                    <div class="cb__buttons__button">RESULT</div>
-                                </div>
-                                <div class="cb__code-container">
-                                    <pre class="code-container__pre"><code
-                                            class="code-container__code code-container__code--syntax"><span
-                                            class="line-number">1</span><span class="hl keyword">var</span> <span
-                                            class="hl var-declare">myArray</span> = [<span
-                                            class="hl const-number">6</span>, <span
-                                            class="hl const-number">5</span>, <span
-                                            class="hl const-number">4</span>, <span
-                                            class="hl const-number">3</span>, <span
-                                            class="hl const-number">1</span>, <span class="hl const-number">2</span>];
-<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>();
-<span class="line-number">3</span><span class="hl var-usage">console</span>.<span
-                                                class="hl function-call">log</span>(<span
-                                                class="hl var-usage">myArray</span>); <span
-                                                class="hl comment">// => 1, 2, 3, 4, 5, 6</span></code></pre>
-                                </div>
+    <div id="browser-support" class="browser-support">
+        <script id="entry-template" type="text/x-handlebars-template">
+            <div class="container">
+                <section class="cs">
+                    <article class="cs__main">
+                        <div class="cs__main--method">
+                            <div class="method">
+                                <h1>{{name}} <span>()</span></h1>
                             </div>
-                            <div class="desc">Briefly explain the example code here.</div>
+                            <p class="desc">{{description}}</p>
                         </div>
                         <hr />
-                        <div class="example__container">
-                            <div class="title">Second Example Title</div>
-                            <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            <div class="cb">
-                                <div class="cb__buttons">
-                                    <div class="cb__buttons__button cb__buttons__button--active">JAVASCRIPT</div>
-                                    <div class="cb__buttons__button">RESULT</div>
-                                </div>
-                                <div class="cb__code-container"><pre class="code-container__pre"><code
-                                        class="code-container__code code-container__code--syntax"><span
-                                        class="line-number">1</span><span class="hl keyword">var</span> <span
-                                        class="hl var-declare">myArray</span> = [<span
-                                        class="hl const-number">6</span>, <span
-                                        class="hl const-number">5</span>, <span
-                                        class="hl const-number">4</span>, <span
-                                        class="hl const-number">3</span>, <span
-                                        class="hl const-number">1</span>, <span class="hl const-number">2</span>];
-<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>();
-<span class="line-number">3</span><span class="hl var-usage">console</span>.<span
-                                            class="hl function-call">log</span>(<span
-                                            class="hl var-usage">myArray</span>); <span
-                                            class="hl comment">// => 1, 2, 3, 4, 5, 6</span></code></pre>
-                                </div>
-                            </div>
-                            <div class="desc">Briefly explain the example code here.</div>
-                        </div>
-                    </div>
-                    <div class="tb tb--open">
-                        <div class="tb__header">
-                            <div class="tb__header__title">Syntax & Defaults</div>
-                            <div class="tb_header_arrow">
-                                <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
-                                <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="tb__content">
+                        <div class="cs__main--examples">
+                            <h2>{{examples.title}}</h2>
                             <div class="example__container">
-                                <div class="title">Subtitle Here</div>
-                                <div class="explanation">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                                <div class="example__container__code-container">
-                                    <pre class="code-container__pre"><code class="code-container__code">var myArray = [6, 5, 4, 3, 1, 2];
-myArray.sort();
-console.log(<strong>myArray</strong>); // => 1, 2, 3, 4, 5, 6</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tb tb--open">
-                        <div class="tb__header">
-                            <div class="tb__header__title">Additional Examples (Including Code Examples)</div>
-                            <div class="tb_header_arrow">
-                                <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
-                                <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="tb__content">
-                            <div class="example__container">
-                                <div class="title">First Example Title</div>
-                                <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="title">{{examples.examples.0.title}}</div>
+                                <div class="intro">{{examples.examples.1.intro}}</div>
                                 <div class="cb">
                                     <div class="cb__buttons">
-                                        <div class="cb__buttons__button cb__buttons__button--active">JAVASCRIPT</div>
-                                        <div class="cb__buttons__button">RESULT</div>
+                                        <div class="cb__buttons__button cb__buttons__button--active">{{examples.examples.0.codeBox.tabs.0.buttonTitle}}</div>
+                                        <div class="cb__buttons__button">{{examples.examples.0.codeBox.tabs.1.buttonTitle}}</div>
                                     </div>
-                                    <div class="cb__code-container"><pre class="code-container__pre"><code
-                                            class="code-container__code code-container__code--syntax"><span
-                                            class="line-number">1</span><span class="hl keyword">var</span> <span
-                                            class="hl var-declare">myArray</span> = [<span
-                                            class="hl const-number">6</span>, <span
-                                            class="hl const-number">5</span>, <span
-                                            class="hl const-number">4</span>, <span
-                                            class="hl const-number">3</span>, <span
-                                            class="hl const-number">1</span>, <span class="hl const-number">2</span>];
-<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>();
-<span class="line-number">3</span><span class="hl var-usage">console</span>.<span
-                                                class="hl function-call">log</span>(<span
-                                                class="hl var-usage">myArray</span>); <span
-                                                class="hl comment">// => 1, 2, 3, 4, 5, 6</span></code></pre>
+                                    <div class="cb__code-container cb__code-container--active">
+                                        <pre class="code-container__pre"><code
+                                                class="code-container__code code-container__code--syntax">{{{examples.examples.0.codeBox.tabs.0.code}}}</code></pre>
                                     </div>
+                                    <div class="cb__code-container code-container__code--syntax">{{{examples.examples.0.codeBox.tabs.1.code}}}</div>
                                 </div>
-                                <div class="desc">Briefly explain the example code here.</div>
+                                <div class="desc">{{examples.examples.0.description}}</div>
                             </div>
+                            <hr />
                             <div class="example__container">
-                                <div class="title">Title of a Non-Trivial Example</div>
-                                <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="title">{{examples.examples.1.title}}</div>
+                                <div class="intro">{{examples.examples.1.intro}}</div>
                                 <div class="cb">
                                     <div class="cb__buttons">
-                                        <div class="cb__buttons__button cb__buttons__button--active">JAVASCRIPT</div>
-                                        <div class="cb__buttons__button">RESULT</div>
+                                        <div class="cb__buttons__button cb__buttons__button--active">{{examples.examples.1.codeBox.tabs.0.buttonTitle}}</div>
+                                        <div class="cb__buttons__button">{{examples.examples.1.codeBox.tabs.1.buttonTitle}}</div>
                                     </div>
-                                    <div class="cb__code-container"><pre class="code-container__pre"><code
-                                            class="code-container__code code-container__code--syntax"><span
-                                            class="line-number">1</span><span class="hl keyword">var</span> <span
-                                            class="hl var-declare">myArray</span> = [<span
-                                            class="hl const-number">6</span>, <span
-                                            class="hl const-number">5</span>, <span
-                                            class="hl const-number">4</span>, <span
-                                            class="hl const-number">3</span>, <span
-                                            class="hl const-number">1</span>, <span class="hl const-number">2</span>];
-<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>();
-<span class="line-number">3</span><span class="hl var-usage">console</span>.<span
-                                                class="hl function-call">log</span>(<span
-                                                class="hl var-usage">myArray</span>); <span
-                                                class="hl comment">// => 1, 2, 3, 4, 5, 6</span></code></pre>
+                                    <div class="cb__code-container cb__code-container--active">
+                                        <pre class="code-container__pre"><code
+                                                class="code-container__code code-container__code--syntax">{{{examples.examples.1.codeBox.tabs.0.code}}}</code></pre>
                                     </div>
+                                    <div class="cb__code-container code-container__code--syntax">{{{examples.examples.1.codeBox.tabs.1.code}}}</div>
                                 </div>
-                                <div class="desc">Briefly explain the example code here.</div>
-                            </div>
-                            <div class="example__container">
-                                <div class="title">Complex Example Title</div>
-                                <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                                <div class="cb">
-                                    <div class="cb__buttons">
-                                        <div class="cb__buttons__button cb__buttons__button--active">JAVASCRIPT</div>
-                                        <div class="cb__buttons__button">RESULT</div>
-                                    </div>
-                                    <div class="cb__code-container"><pre class="code-container__pre"><code
-                                            class="code-container__code code-container__code--syntax"><span
-                                            class="line-number">1</span><span class="hl keyword">var</span> <span
-                                            class="hl var-declare">myArray</span> = [<span
-                                            class="hl const-number">6</span>, <span
-                                            class="hl const-number">5</span>, <span
-                                            class="hl const-number">4</span>, <span
-                                            class="hl const-number">3</span>, <span
-                                            class="hl const-number">1</span>, <span class="hl const-number">2</span>];
-<span class="line-number">2</span><span class="hl var-usage">myArray</span>.<span class="hl function-call">sort</span>();
-<span class="line-number">3</span><span class="hl var-usage">console</span>.<span
-                                                class="hl function-call">log</span>(<span
-                                                class="hl var-usage">myArray</span>); <span
-                                                class="hl comment">// => 1, 2, 3, 4, 5, 6</span></code></pre>
-                                    </div>
-                                </div>
-                                <div class="desc">Briefly explain the example code here.</div>
+                                <div class="desc">{{examples.examples.1.description}}</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tb">
-                        <div class="tb__header">
-                            <div class="tb__header__title">Best Practices and Other Tips</div>
-                            <div class="tb_header_arrow">
-                                <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
-                                <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="tb__content">
-                            <div class="example__container">
-                                <div class="title">Subtitle Here</div>
-                                <div class="explanation">Explanation goes here.</div>
-                                <div class="explanation explanation--margin">Add details here.</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <aside class="cs__aside">
-                    <div class="cs__aside--qa">
-                        <div class="title">Related Questions and Answers</div>
-                        <div class="logo">&mdash; QA. Modern Developer</div>
-                        <div class="qna__container">
-                            <div class="qna no">
-                                <div class="q__container">
-                                    <div>
-                                        <div class="ball">Q</div>
-                                    </div>
-                                    <div class="question">How do I Create Custom Sort in JavaScript</div>
-                                </div>
-                                <div class="a__container">
-                                    <div>
-                                        <div class="ball">A</div>
-                                    </div>
-                                    <div class="answer">No</div>
+                        <div class="tb tb--open">
+                            <div class="tb__header">
+                                <div class="tb__header__title">{{syntaxAndDefaults.title}}</div>
+                                <div class="tb_header_arrow">
+                                    <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
+                                    <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
                                 </div>
                             </div>
-                            <div class="qna yes">
-                                <div class="q__container">
-                                    <div>
-                                        <div class="ball">Q</div>
+                            <div class="tb__content">
+                                <div class="example__container">
+                                    <div class="title">{{syntaxAndDefaults.subtitle}}</div>
+                                    <div class="explanation">{{syntaxAndDefaults.explanation}}</div>
+                                    <div class="example__container__code-container">
+                                        <pre class="code-container__pre"><code class="code-container__code">{{syntaxAndDefaults.code}}</code></pre>
                                     </div>
-                                    <div class="question">Error Sorting Object in Array</div>
-                                </div>
-                                <div class="a__container">
-                                    <div>
-                                        <div class="ball">A</div>
-                                    </div>
-                                    <div class="answer">Yes</div>
-                                </div>
-                            </div>
-                            <div class="qna yes">
-                                <div class="q__container">
-                                    <div>
-                                        <div class="ball">Q</div>
-                                    </div>
-                                    <div class="question">Error Sorting Object in Array</div>
-                                </div>
-                                <div class="a__container">
-                                    <div>
-                                        <div class="ball">A</div>
-                                    </div>
-                                    <div class="answer">Yes</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="related"><a href="">All related question on QA<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
-                    </div>
-                    <div class="cs__aside--other">
-                        <div class="title">Other Array Methods</div>
-                        <div class="native">
-                            <div class="title">Native Javascript Methods</div>
-                            <ul class="methods">
-                                <li>shift()</li>
-                                <li>reverse()</li>
-                                <li>pop()</li>
-                                <li>push()</li>
-                                <li>shift()</li>
-                                <li>slice()</li>
-                            </ul>
-                        </div>
-                        <div class="non-native">
-                            <div class="title">Non-Native Methods</div>
-                            <div class="libraries">
-                                <div class="library">
-                                    <div class="title">&mdash; Lodash</div>
-                                    <ul class="methods">
-                                        <li>_.chunk</li>
-                                        <li>_.compact</li>
-                                        <li>_.concat</li>
-                                        <li>_.difference</li>
-                                        <li>_.differenceBy</li>
-                                        <li>_.differenceWith</li>
-                                        <li>_.drop</li>
-                                        <li>_.dropRight</li>
-                                        <li>_.chunk</li>
-                                    </ul>
-                                </div>
-                                <div class="library">
-                                    <div class="title">&mdash; Modern Developer</div>
-                                    <ul class="methods">
-                                        <li>_.pushUnique</li>
-                                        <li>_.deleteUnique</li>
-                                    </ul>
+                        <div class="tb tb--open">
+                            <div class="tb__header">
+                                <div class="tb__header__title">{{additionalExamples.title}}</div>
+                                <div class="tb_header_arrow">
+                                    <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
+                                    <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </aside>
-                <div class="cs__bs">
-                    <div class="tb tb--open">
-                        <div class="tb__header">
-                            <div class="tb__header__title">Browser Compatibility</div>
-                            <div class="tb_header_arrow">
-                                <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
-                                <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="tb__content">
-                            <div class="bs__container">
-                                <div class="bs__label">
-                                    <div class="status">
-                                        <div class="status--color not-supported"></div>
-                                        <div class="status--name">Not Supported</div>
-                                    </div>
-                                    <div class="status">
-                                        <div class="status--color partial-supported"></div>
-                                        <div class="status--name">Support with Shim/Polyfill/etc.</div>
-                                    </div>
-                                    <div class="status">
-                                        <div class="status--color fully-supported"></div>
-                                        <div class="status--name">Full Support</div>
-                                    </div>
-                                </div>
-                                <div class="bs__browser">
-                                    <div class="browser">
-                                        <div class="browser--name ie">
-                                            <img src="assets/icons/ie.svg" alt="">Internet Explorer
+                            <div class="tb__content">
+                                <div class="example__container">
+                                    <div class="title">{{additionalExamples.examples.0.title}}</div>
+                                    <div class="intro">{{additionalExamples.examples.0.intro}}</div>
+                                    <div class="cb">
+                                        <div class="cb__buttons">
+                                            <div class="cb__buttons__button cb__buttons__button--active">{{additionalExamples.examples.0.codeBox.tabs.0.buttonTitle}}</div>
+                                            <div class="cb__buttons__button">{{additionalExamples.examples.0.codeBox.tabs.1.buttonTitle}}</div>
                                         </div>
-                                        <div class="browser--version">
-                                            <div class="version not-supported">
-                                                <input id="ie7" type="radio" name="ie" value="ie7" checked>
-                                                <label for="ie7">7</label>
-                                            </div>
-                                            <div class="version partial-supported version--selected">
-                                                <input id="ie8" type="radio" name="ie" value="ie8">
-                                                <label for="ie8">8</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="ie9" type="radio" name="ie" value="ie9">
-                                                <label for="ie9">9</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="ie10" type="radio" name="ie" value="ie10">
-                                                <label for="ie10">10</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="ie11" type="radio" name="ie" value="ie11">
-                                                <label for="ie11">11</label>
-                                            </div>
+                                        <div class="cb__code-container cb__code-container--active"><pre class="code-container__pre"><code
+                                            class="code-container__code code-container__code--syntax">{{{additionalExamples.examples.1.codeBox.tabs.0.code}}}</code></pre>
+                                        </div>
+                                        <div class="cb__code-container code-container__code--syntax">{{{additionalExamples.examples.0.codeBox.tabs.1.code}}}</div>
+                                    </div>
+                                    <div class="desc">{{additionalExamples.examples.0.description}}</div>
+                                </div>
+                                <div class="example__container">
+                                    <div class="title">{{additionalExamples.examples.1.title}}</div>
+                                    <div class="intro">{{additionalExamples.examples.1.intro}}</div>
+                                    <div class="cb">
+                                        <div class="cb__buttons">
+                                            <div class="cb__buttons__button cb__buttons__button--active">{{additionalExamples.examples.1.codeBox.tabs.0.buttonTitle}}</div>
+                                            <div class="cb__buttons__button">{{additionalExamples.examples.1.codeBox.tabs.1.buttonTitle}}</div>
+                                        </div>
+                                        <div class="cb__code-container cb__code-container--active"><pre class="code-container__pre"><code
+                                            class="code-container__code code-container__code--syntax">{{{additionalExamples.examples.1.codeBox.tabs.0.code}}}</code></pre>
+                                        </div>
+                                        <div class="cb__code-container code-container__code--syntax">{{{additionalExamples.examples.1.codeBox.tabs.1.code}}}</div>
+                                    </div>
+                                    <div class="desc">{{additionalExamples.examples.1.description}}</div>
+                                </div>
+                                <div class="example__container">
+                                    <div class="title">{{additionalExamples.examples.2.title}}</div>
+                                    <div class="intro">{{additionalExamples.examples.2.intro}}</div>
+                                    <div class="cb">
+                                        <div class="cb__buttons">
+                                            <div class="cb__buttons__button cb__buttons__button--active">{{additionalExamples.examples.2.codeBox.tabs.0.buttonTitle}}</div>
+                                            <div class="cb__buttons__button">{{additionalExamples.examples.2.codeBox.tabs.1.buttonTitle}}</div>
+                                        </div>
+                                        <div class="cb__code-container cb__code-container--active"><pre class="code-container__pre"><code
+                                            class="code-container__code code-container__code--syntax">{{{additionalExamples.examples.2.codeBox.tabs.0.code}}}</code></pre>
+                                        </div>
+                                        <div class="cb__code-container code-container__code--syntax">{{{additionalExamples.examples.2.codeBox.tabs.1.code}}}</div>
+                                    </div>
+                                    <div class="desc">{{additionalExamples.examples.2.description}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tb tb--open">
+                            <div class="tb__header">
+                                <div class="tb__header__title">{{bestPractices.title}}</div>
+                                <div class="tb_header_arrow">
+                                    <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
+                                    <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                            <div class="tb__content">
+                                <div class="example__container">
+                                    <div class="title">{{bestPractices.subtitle}}</div>
+                                    <div class="explanation">{{bestPractices.explanations.[0]}}</div>
+                                    <div class="explanation explanation--margin">{{bestPractices.explanations.[1]}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="cs__aside">
+                        <div class="cs__aside--qa">
+                            <div class="title">{{qa.title}}</div>
+                            <div class="logo">{{qa.subtitle}}</div>
+                            <div class="qna__container">
+                                <div class="qna no">
+                                    <div class="q__container">
+                                        <div>
+                                            <div class="ball">Q</div>
+                                        </div>
+                                        <div class="question">{{qa.questions.0.question}}</div>
+                                    </div>
+                                    <div class="a__container">
+                                        <div>
+                                            <div class="ball">A</div>
+                                        </div>
+                                        <div class="answer">{{qa.questions.0.answer}}</div>
+                                    </div>
+                                </div>
+                                <div class="qna yes">
+                                    <div class="q__container">
+                                        <div>
+                                            <div class="ball">Q</div>
+                                        </div>
+                                        <div class="question">{{qa.questions.1.question}}</div>
+                                    </div>
+                                    <div class="a__container">
+                                        <div>
+                                            <div class="ball">A</div>
+                                        </div>
+                                        <div class="answer">{{qa.questions.1.answer}}</div>
+                                    </div>
+                                </div>
+                                <div class="qna yes">
+                                    <div class="q__container">
+                                        <div>
+                                            <div class="ball">Q</div>
+                                        </div>
+                                        <div class="question">{{qa.questions.2.question}}</div>
+                                    </div>
+                                    <div class="a__container">
+                                        <div>
+                                            <div class="ball">A</div>
+                                        </div>
+                                        <div class="answer">{{qa.questions.2.answer}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related"><a href="">{{qa.related}}<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                        </div>
+                        <div class="cs__aside--other">
+                            <div class="title">{{otherMethods.title}}</div>
+                            <div class="native">
+                                <div class="title">{{otherMethods.native.title}}</div>
+                                <ul class="methods">
+                                    <li>{{otherMethods.native.methods.[0]}}</li>
+                                    <li>{{otherMethods.native.methods.[1]}}</li>
+                                    <li>{{otherMethods.native.methods.[2]}}</li>
+                                    <li>{{otherMethods.native.methods.[3]}}</li>
+                                    <li>{{otherMethods.native.methods.[4]}}</li>
+                                    <li>{{otherMethods.native.methods.[5]}}</li>
+                                </ul>
+                            </div>
+                            <div class="non-native">
+                                <div class="title">{{otherMethods.nonNative.title}}</div>
+                                <div class="libraries">
+                                    <div class="library">
+                                        <div class="title">{{otherMethods.nonNative.libraries.0.title}}</div>
+                                        <ul class="methods">
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[0]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[1]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[2]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[3]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[4]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[5]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[6]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[7]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.0.methods.[8]}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="library">
+                                        <div class="title">{{otherMethods.nonNative.libraries.1.title}}</div>
+                                        <ul class="methods">
+                                            <li>{{otherMethods.nonNative.libraries.1.methods.[0]}}</li>
+                                            <li>{{otherMethods.nonNative.libraries.1.methods.[1]}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="cs__bs">
+                        <div class="tb tb--open">
+                            <div class="tb__header">
+                                <div class="tb__header__title">{{browserCompatibility.title}}</div>
+                                <div class="tb_header_arrow">
+                                    <span class="fa fa-angle-up fa-2x tb__header__arrow--up" aria-hidden="true"></span>
+                                    <span class="fa fa-angle-down fa-2x tb__header__arrow--down" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                            <div class="tb__content">
+                                <div class="bs__container">
+                                    <div class="bs__label">
+                                        <div class="status">
+                                            <div class="status--color not-supported"></div>
+                                            <div class="status--name">{{browserCompatibility.keys.notSupported}}</div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="status--color partial-supported"></div>
+                                            <div class="status--name">{{browserCompatibility.keys.partialSupported}}</div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="status--color fully-supported"></div>
+                                            <div class="status--name">{{browserCompatibility.keys.fullSupported}}</div>
                                         </div>
                                     </div>
-                                    <div class="info-container info-container--show">
-                                        <div id="ie7-info" class="version-info not-supported">
-                                        </div>
-                                        <div id="ie8-info" class="version-info version-info--selected">
-                                            <div class="version-info__section version-info__use">
-                                                <div class="title">Users Using It</div>
-                                                <div class="usage-list">
-                                                    <div class="usage-list__item">
-                                                        <div class="usage-list__item__label">United States:</div>
-                                                        <div class="usage-list__item__data">4%</div>
-                                                    </div>
-                                                    <div class="usage-list__item">
-                                                        <div class="usage-list__item__label">Worldwide:</div>
-                                                        <div class="usage-list__item__data">2%</div>
-                                                    </div>
+                                    <div class="bs__browser">
+                                        <div class="browser">
+                                            <div class="browser--name ie">{{{browserCompatibility.browsers.0.name}}}
+                                            </div>
+                                            <div class="browser--version">
+                                                <div class="version not-supported">
+                                                    <input id="ie7" type="radio" class="bs__version-radio" name="ie" value="ie7">
+                                                    <label for="ie7">{{browserCompatibility.browsers.0.versions.0.versionNumber}}</label>
                                                 </div>
-                                                <div class="note">Updated: January 12, 2016</div>
-                                            </div>
-                                            <div class="version-info__separator"></div>
-                                            <div class="version-info__section version-info__support">
-                                                <div class="title">How to Add Support?</div>
-                                                <div class="numbered-list">
-                                                    <div class="numbered-list__item">
-                                                        <strong>HTML5Boilerplate:</strong> Add Support for .sort() support for IE8
-                                                    </div>
-                                                    <div class="numbered-list__item">
-                                                        <strong>HTML5Boilerplate:</strong> Add Support for .sort() support for IE8
-                                                    </div>
+                                                <div class="version partial-supported version--selected">
+                                                    <input id="ie8" type="radio" class="bs__version-radio" name="ie" value="ie8" checked>
+                                                    <label for="ie8">{{browserCompatibility.browsers.0.versions.1.versionNumber}}</label>
                                                 </div>
-                                            </div>
-                                            <div class="version-info__separator"></div>
-                                            <div class="version-info__section version-info__support">
-                                                <div class="title">Should You Support this Version</div>
-                                                <div class="numbered-list">
-                                                    <div class="numbered-list__item">
-                                                        <strong>Info or Link Here</strong>
-                                                    </div>
-                                                    <div class="numbered-list__item">
-                                                        <strong>Info or Link Here</strong>
-                                                    </div>
+                                                <div class="version fully-supported">
+                                                    <input id="ie9" type="radio" class="bs__version-radio" name="ie" value="ie9">
+                                                    <label for="ie9">{{browserCompatibility.browsers.0.versions.2.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="ie10" type="radio" class="bs__version-radio" name="ie" value="ie10">
+                                                    <label for="ie10">{{browserCompatibility.browsers.0.versions.3.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="ie11" type="radio" class="bs__version-radio" name="ie" value="ie11">
+                                                    <label for="ie11">{{browserCompatibility.browsers.0.versions.4.versionNumber}}</label>
                                                 </div>
                                             </div>
-                                            <div class="version-info__close">&#x00D7;</div>
+                                        </div>
+                                        <div class="info-container info-container--show">
+                                            <div id="ie8-info" class="version-info version-info--selected">
+                                                <div class="version-info__section version-info__use">
+                                                    <div class="title">{{browserCompatibility.browsers.0.versions.1.info.usage.title}}</div>
+                                                    <div class="usage-list">
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.0.versions.1.info.usage.locations.0.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.0.versions.1.info.usage.locations.0.usage}}</div>
+                                                        </div>
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.0.versions.1.info.usage.locations.1.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.0.versions.1.info.usage.locations.1.usage}}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="note">{{browserCompatibility.browsers.0.versions.1.info.usage.updated}}</div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.0.versions.1.info.supportHowTo.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.0.versions.1.info.supportHowTo.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.0.versions.1.info.supportHowTo.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.0.versions.1.info.shouldSupport.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.0.versions.1.info.shouldSupport.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.0.versions.1.info.shouldSupport.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__close">&#x00D7;</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="bs__browser">
-                                    <div class="browser">
-                                        <div class="browser--name edge">
-                                            <img src="assets/icons/edge.svg" alt="">Microsoft Edge</div>
-                                        <div class="browser--version">
-                                            <div class="version not-supported">
-                                                <input id="edge13" type="radio" name="edge" value="edge13" checked>
-                                                <label for="edge13">13</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="edge14" type="radio" name="edge" value="edge14">
-                                                <label for="edge14">14</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bs__browser">
-                                    <div class="browser">
-                                        <div class="browser--name firefox">
-                                            <img src="assets/icons/firefox.svg" alt="">Mozilla Firefox</div>
-                                        <div class="browser--version">
-                                            <div class="version not-supported">
-                                                <input id="firefox44" type="radio" name="firefox" value="firefox44">
-                                                <label for="firefox44">44</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="firefox45" type="radio" name="firefox" value="firefox45">
-                                                <label for="firefox45">45</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="firefox46" type="radio" name="firefox" value="firefox46">
-                                                <label for="firefox46">46</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="firefox47" type="radio" name="firefox" value="firefox47">
-                                                <label for="firefox47">47</label>
-                                            </div>
-                                            <div class="version fully-supported">
-                                                <input id="firefox48" type="radio" name="firefox" value="firefox48">
-                                                <label for="firefox48">48</label>
+                                    <div class="bs__browser">
+                                        <div class="browser">
+                                            <div class="browser--name edge">{{{browserCompatibility.browsers.1.name}}}</div>
+                                            <div class="browser--version">
+                                                <div class="version not-supported">
+                                                    <input id="edge13" type="radio" class="bs__version-radio" name="edge" value="edge13" checked>
+                                                    <label for="edge13">{{browserCompatibility.browsers.1.versions.0.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="edge14" type="radio" class="bs__version-radio" name="edge" value="edge14">
+                                                    <label for="edge14">{{browserCompatibility.browsers.1.versions.1.versionNumber}}</label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="bs__browser">
-                                    <div class="browser">
-                                        <div class="browser--name chrome">
-                                            <img src="assets/icons/chrome.svg" alt="">Google Chrome</div>
-                                        <div class="browser--version">
-                                            <div class="version not-supported">
-                                                <input id="chrome47" type="radio" name="chrome47" value="chrome47" checked>
-                                                <label for="chrome47">47</label>
+                                    <div class="bs__browser">
+                                        <div class="browser">
+                                            <div class="browser--name firefox">{{{browserCompatibility.browsers.2.name}}}</div>
+                                            <div class="browser--version">
+                                                <div class="version not-supported">
+                                                    <input id="firefox44" type="radio" class="bs__version-radio" name="firefox" value="firefox44">
+                                                    <label for="firefox44">{{browserCompatibility.browsers.2.versions.0.versionNumber}}</label>
+                                                </div>
+                                                <div class="version partial-supported">
+                                                    <input id="firefox45" type="radio" class="bs__version-radio" name="firefox" value="firefox45">
+                                                    <label for="firefox45">{{browserCompatibility.browsers.2.versions.1.versionNumber}}</label>
+                                                </div>
+                                                <div class="version partial-supported">
+                                                    <input id="firefox46" type="radio" class="bs__version-radio" name="firefox" value="firefox46">
+                                                    <label for="firefox46">{{browserCompatibility.browsers.2.versions.2.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="firefox47" type="radio" class="bs__version-radio" name="firefox" value="firefox47">
+                                                    <label for="firefox47">{{browserCompatibility.browsers.2.versions.3.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="firefox48" type="radio" class="bs__version-radio" name="firefox" value="firefox48">
+                                                    <label for="firefox48">{{browserCompatibility.browsers.2.versions.4.versionNumber}}</label>
+                                                </div>
                                             </div>
-                                            <div class="version fully-supported">
-                                                <input id="chrome48" type="radio" name="chrome48" value="chrome48">
-                                                <label for="chrome48">48</label>
+                                        </div>
+                                        <div class="info-container">
+                                            <div id="firefox45-info" class="version-info">
+                                                <div class="version-info__section version-info__use">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.1.info.usage.title}}</div>
+                                                    <div class="usage-list">
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.2.versions.1.info.usage.locations.0.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.2.versions.1.info.usage.locations.0.usage}}</div>
+                                                        </div>
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.2.versions.1.info.usage.locations.1.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.2.versions.1.info.usage.locations.1.usage}}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="note">{{browserCompatibility.browsers.2.versions.1.info.usage.updated}}</div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.1.info.supportHowTo.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.1.info.supportHowTo.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.1.info.supportHowTo.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.1.info.shouldSupport.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.1.info.shouldSupport.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.1.info.shouldSupport.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__close">&#x00D7;</div>
                                             </div>
-                                            <div class="version fully-supported">
-                                                <input id="chrome49" type="radio" name="chrome49" value="chrome49" checked>
-                                                <label for="chrome49">49</label>
+                                            <div id="firefox46-info" class="version-info">
+                                                <div class="version-info__section version-info__use">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.2.info.usage.title}}</div>
+                                                    <div class="usage-list">
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.2.versions.2.info.usage.locations.0.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.2.versions.2.info.usage.locations.0.usage}}</div>
+                                                        </div>
+                                                        <div class="usage-list__item">
+                                                            <div class="usage-list__item__label">{{browserCompatibility.browsers.2.versions.2.info.usage.locations.1.name}}</div>
+                                                            <div class="usage-list__item__data">{{browserCompatibility.browsers.2.versions.2.info.usage.locations.1.usage}}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="note">{{browserCompatibility.browsers.2.versions.2.info.usage.updated}}</div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.2.info.supportHowTo.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.2.info.supportHowTo.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.2.info.supportHowTo.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__separator"></div>
+                                                <div class="version-info__section version-info__support">
+                                                    <div class="title">{{browserCompatibility.browsers.2.versions.2.info.shouldSupport.title}}</div>
+                                                    <div class="numbered-list">
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.2.info.shouldSupport.list.[0]}}}
+                                                        </div>
+                                                        <div class="numbered-list__item">
+                                                            {{{browserCompatibility.browsers.2.versions.2.info.shouldSupport.list.[1]}}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="version-info__close">&#x00D7;</div>
                                             </div>
-                                            <div class="version fully-supported">
-                                                <input id="chrome50" type="radio" name="chrome50" value="chrome50">
-                                                <label for="chrome50">50</label>
+                                        </div>
+                                    </div>
+                                    <div class="bs__browser">
+                                        <div class="browser">
+                                            <div class="browser--name chrome">{{{browserCompatibility.browsers.3.name}}}</div>
+                                            <div class="browser--version">
+                                                <div class="version not-supported">
+                                                    <input id="chrome47" type="radio" class="bs__version-radio" name="chrome47" value="chrome47" checked>
+                                                    <label for="chrome47">{{browserCompatibility.browsers.3.versions.0.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="chrome48" type="radio" class="bs__version-radio" name="chrome48" value="chrome48">
+                                                    <label for="chrome48">{{browserCompatibility.browsers.3.versions.1.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="chrome49" type="radio" class="bs__version-radio" name="chrome49" value="chrome49" checked>
+                                                    <label for="chrome49">{{browserCompatibility.browsers.3.versions.2.versionNumber}}</label>
+                                                </div>
+                                                <div class="version fully-supported">
+                                                    <input id="chrome50" type="radio" class="bs__version-radio" name="chrome50" value="chrome50">
+                                                    <label for="chrome50">{{browserCompatibility.browsers.3.versions.3.versionNumber}}</label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="cs__footnote">
+                            <div class="related">
+                                <h3>{{relatedArticles.title}}</h3>
+                                <ol>
+                                    <li><a href={{relatedArticles.articles.0.link}}>{{relatedArticles.articles.0.title}}</a></li>
+                                    <li><a href={{relatedArticles.articles.1.link}}>{{relatedArticles.articles.1.title}}</a></li>
+                                    <li><a href={{relatedArticles.articles.2.link}}>{{relatedArticles.articles.2.title}}</a></li>
+                                    <li><a href={{relatedArticles.articles.3.link}}>{{relatedArticles.articles.3.title}}</a></li>
+                                </ol>
+                            </div>
+                            <div class="references">
+                                <h3>{{reference.title}}</h3>
+                                <ol>
+                                    <li>{{reference.references.0.title}} <a href={{reference.references.0.link}}>{{reference.references.0.link}}</a></li>
+                                    <li>{{reference.references.1.title}} <a href={{reference.references.1.link}}>{{reference.references.0.link}}</a></li>
+                                    <li>{{reference.references.2.title}} <a href={{reference.references.2.link}}>{{reference.references.0.link}}</a></li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="cs__footnote">
-                    <div class="related">
-                        <h3>Related Articles</h3>
-                        <ol>
-                            <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio.</a></li>
-                            <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.</a></li>
-                            <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium !</a></li>
-                            <li><a href="">orem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque.</a></li>
-                        </ol>
-                    </div>
-                    <div class="references">
-                        <h3>References</h3>
-                        <ol>
-                            <li>Can I Use ? <a href="">http://caniuse.com</a></li>
-                            <li>Can I Use ? <a href="">http://caniuse.com</a></li>
-                            <li>Can I Use ? <a href="">http://caniuse.com</a></li>
-                            <li>Can I Use ? <a href="">http://caniuse.com</a></li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
+        </script>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
 
